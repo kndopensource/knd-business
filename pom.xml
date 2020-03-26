@@ -6,6 +6,10 @@
     <groupId>com.knd</groupId>
     <artifactId>knd-business</artifactId>
     <version>1.0.0</version>
+    <modules>
+        <module>manager-center</module>
+        <module>file-storage</module>
+    </modules>
     <packaging>pom</packaging>
 
     <properties>
@@ -93,6 +97,62 @@
 
     <dependencyManagement>
         <dependencies>
+            <dependency>
+                <groupId>com.knd</groupId>
+                <artifactId>micro-nacos-config</artifactId>
+                <version>${project.version}</version>
+            </dependency>
+            <!-- 自定义 starter -->
+            <dependency>
+                <groupId>com.knd</groupId>
+                <artifactId>knd-log-springboot-starter</artifactId>
+                <version>${project.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.knd</groupId>
+                <artifactId>knd-common-core</artifactId>
+                <version>${project.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.knd</groupId>
+                <artifactId>knd-redis-springboot-starter</artifactId>
+                <version>${project.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.knd</groupId>
+                <artifactId>knd-sentinel-springboot-starter</artifactId>
+                <version>${project.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.knd</groupId>
+                <artifactId>knd-ribbon-springboot-starter</artifactId>
+                <version>${project.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.knd</groupId>
+                <artifactId>knd-authclient-springboot-starter</artifactId>
+                <version>${project.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.knd</groupId>
+                <artifactId>knd-common-springboot-starter</artifactId>
+                <version>${project.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.knd</groupId>
+                <artifactId>knd-swagger2-springboot-starter</artifactId>
+                <version>${project.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.knd</groupId>
+                <artifactId>knd-db-springboot-starter</artifactId>
+                <version>${project.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.knd</groupId>
+                <artifactId>search-client</artifactId>
+                <version>${project.version}</version>
+            </dependency>
             <dependency>
                 <groupId>org.springframework.social</groupId>
                 <artifactId>spring-social-security</artifactId>
