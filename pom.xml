@@ -5,7 +5,7 @@
     <modelVersion>4.0.0</modelVersion>
     <groupId>com.knd</groupId>
     <artifactId>knd-business</artifactId>
-    <version>1.0.0</version>
+    <version>1.0.0-SNAPSHOT</version>
     <modules>
         <module>manager-center</module>
         <module>file-storage</module>
@@ -55,7 +55,7 @@
         <spring-cloud-dependencies.version>Greenwich.SR5</spring-cloud-dependencies.version>
         <spring-boot-maven-plugin.version>2.1.12.RELEASE</spring-boot-maven-plugin.version>
         <docker-maven-plugin.version>1.2.2</docker-maven-plugin.version>
-        <sonar.exclusions>zlt-job/**/*, zlt-register/**/*, zlt-web/**/*</sonar.exclusions>
+        <!--<sonar.exclusions>zlt-job/**/*, zlt-register/**/*, zlt-web/**/*</sonar.exclusions>-->
         <docker.baseImage>openjdk:8-jre-alpine</docker.baseImage>
         <docker.volumes>/tmp</docker.volumes>
         <docker.image.prefix>hub.zlt.com:8080/microservices-platform</docker.image.prefix>
@@ -212,6 +212,15 @@
                     <configuration>
                     </configuration>
                 </plugin>
+                <!-- 一键更新子模块版本号 -->
+                <!--<plugin>-->
+                <!--<groupId>org.codehaus.mojo</groupId>-->
+                <!--<artifactId>versions-maven-plugin</artifactId>-->
+                <!--<version>2.7</version>-->
+                <!--<configuration>-->
+                <!--<generateBackupPoms>false</generateBackupPoms>-->
+                <!--</configuration>-->
+                <!--</plugin>-->
             </plugins>
         </pluginManagement>
     </build>
@@ -225,21 +234,29 @@
             </snapshots>
         </repository>
     </repositories>
+    <!--当前激活版本-->
+    <profiles>
+        <profile>
+            <id>maven-snapshots</id>  <!--maven-releases-->
+            <properties>
+                <project.version>${project.version}</project.version>
+            </properties>
+        </profile>
+    </profiles>
+    <!--定义snapshots库和releases库的nexus地址 id设置要与setting.xml配置一致-->
     <distributionManagement>
         <repository>
-            <id>releases</id>
+            <id>maven-releases</id>
             <name>releases Repository</name>
-            <url>http://192.168.28.138:8081/repository/maven-releases/</url>
+            <url>http://192.168.1.110:8081/repository/maven-releases/</url>
         </repository>
 
         <snapshotRepository>
-            <id>snapshots</id>
-            <url>http://192.168.28.138:8081/repository/maven-snapshots/</url>
+            <id>maven-snapshots</id>
+            <url>http://192.168.1.110:8081/repository/maven-snapshots/</url>
             <uniqueVersion>true</uniqueVersion>
         </snapshotRepository>
     </distributionManagement>
-
-
     <licenses>
         <license>
             <name>The Apache Software License, Version 2.0</name>

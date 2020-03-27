@@ -58,8 +58,7 @@ public class SysMenuController {
     /**
      * 删除菜单
      *
-     * @param id
-     */
+     * @param id     */
     @ApiOperation(value = "删除菜单")
     @DeleteMapping("/{id}")
     public Result delete(@PathVariable Long id) {

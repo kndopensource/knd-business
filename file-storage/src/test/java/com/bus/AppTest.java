@@ -1,4 +1,4 @@
-package com.knd;
+package com.bus;
 
 import static org.junit.Assert.assertTrue;
 

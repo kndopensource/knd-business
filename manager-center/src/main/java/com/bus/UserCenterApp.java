@@ -1,4 +1,4 @@
-package com.bus.manager;
+package com.bus;
 
 import com.kernel.common.ribbon.annotation.EnableFeignInterceptor;
 import com.kernel.search.annotation.EnableSearchClient;
