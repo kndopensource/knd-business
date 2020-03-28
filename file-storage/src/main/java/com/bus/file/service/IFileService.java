@@ -2,7 +2,7 @@ package com.bus.file.service;
 
 import com.baomidou.mybatisplus.extension.service.IService;
 import com.kernel.common.model.PageResult;
-import com.bus.file.file.model.FileInfo;
+import com.bus.file.model.FileInfo;
 import org.springframework.web.multipart.MultipartFile;
 
 import java.util.Map;

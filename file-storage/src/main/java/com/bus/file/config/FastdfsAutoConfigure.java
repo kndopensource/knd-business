@@ -1,9 +1,9 @@
 package com.bus.file.config;
 
 import cn.hutool.core.util.StrUtil;
-import com.bus.file.file.model.FileInfo;
-import com.bus.file.file.properties.FileServerProperties;
-import com.bus.file.file.service.impl.AbstractIFileService;
+import com.bus.file.model.FileInfo;
+import com.bus.file.properties.FileServerProperties;
+import com.bus.file.service.impl.AbstractIFileService;
 import com.github.tobato.fastdfs.domain.fdfs.StorePath;
 import com.github.tobato.fastdfs.service.FastFileStorageClient;
 import org.apache.commons.io.FilenameUtils;

@@ -1,8 +1,8 @@
 package com.bus.file.config;
 
-import com.bus.file.file.model.FileInfo;
-import com.bus.file.file.properties.FileServerProperties;
-import com.bus.file.file.service.impl.AbstractIFileService;
+import com.bus.file.model.FileInfo;
+import com.bus.file.properties.FileServerProperties;
+import com.bus.file.service.impl.AbstractIFileService;
 import com.qiniu.common.QiniuException;
 import com.qiniu.common.Zone;
 import com.qiniu.http.Response;

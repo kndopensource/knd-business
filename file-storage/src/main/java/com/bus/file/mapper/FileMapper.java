@@ -2,7 +2,7 @@ package com.bus.file.mapper;
 
 import com.baomidou.mybatisplus.extension.plugins.pagination.Page;
 import com.kernel.db.mapper.SuperMapper;
-import com.bus.file.file.model.FileInfo;
+import com.bus.file.model.FileInfo;
 import org.apache.ibatis.annotations.Param;
 
 import java.util.List;

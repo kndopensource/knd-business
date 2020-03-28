@@ -2,8 +2,8 @@ package com.bus.file.controller;
 
 import com.kernel.common.model.PageResult;
 import com.kernel.common.model.Result;
-import com.bus.file.file.model.FileInfo;
-import com.bus.file.file.service.IFileService;
+import com.bus.file.model.FileInfo;
+import com.bus.file.service.IFileService;
 import org.springframework.web.bind.annotation.*;
 import org.springframework.web.multipart.MultipartFile;
 

@@ -2,9 +2,9 @@ package com.bus.file.config;
 
 import com.aliyun.oss.OSSClient;
 import com.aliyun.oss.common.auth.DefaultCredentialProvider;
-import com.bus.file.file.model.FileInfo;
-import com.bus.file.file.properties.FileServerProperties;
-import com.bus.file.file.service.impl.AbstractIFileService;
+import com.bus.file.model.FileInfo;
+import com.bus.file.properties.FileServerProperties;
+import com.bus.file.service.impl.AbstractIFileService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.autoconfigure.condition.ConditionalOnProperty;
 import org.springframework.context.annotation.Bean;

@@ -1,7 +1,7 @@
 package com.bus.file.utils;
 
 import cn.hutool.core.util.IdUtil;
-import com.bus.file.file.model.FileInfo;
+import com.bus.file.model.FileInfo;
 import lombok.extern.slf4j.Slf4j;
 import org.apache.commons.codec.digest.DigestUtils;
 import org.springframework.web.multipart.MultipartFile;
