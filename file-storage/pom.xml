@@ -29,19 +29,19 @@
         </dependency>
         <dependency>
             <groupId>com.knd</groupId>
-            <artifactId>knd-common-spring-boot-starter</artifactId>
+            <artifactId>knd-common-springboot-starter</artifactId>
         </dependency>
         <dependency>
             <groupId>com.knd</groupId>
-            <artifactId>knd-db-spring-boot-starter</artifactId>
+            <artifactId>knd-db-springboot-starter</artifactId>
         </dependency>
         <dependency>
             <groupId>com.knd</groupId>
-            <artifactId>knd-ribbon-spring-boot-starter</artifactId>
+            <artifactId>knd-ribbon-springboot-starter</artifactId>
         </dependency>
         <dependency>
             <groupId>com.knd</groupId>
-            <artifactId>knd-sentinel-spring-boot-starter</artifactId>
+            <artifactId>knd-sentinel-springboot-starter</artifactId>
         </dependency>
 
         <dependency>
@@ -61,7 +61,7 @@
         <!-- swagger -->
         <dependency>
             <groupId>com.knd</groupId>
-            <artifactId>knd-swagger2-spring-boot-starter</artifactId>
+            <artifactId>knd-swagger2-springboot-starter</artifactId>
         </dependency>
 
         <dependency>
